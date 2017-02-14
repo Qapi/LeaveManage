@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.wp.domain">
+ <class name="LeaveBill" table="a_leaveBill">
+  <id column="id" name="id" type="long">
+   <generator class="native"/>
+  </id>
+  <property column="days" generated="never" lazy="false" name="days" type="integer"/>
+  <property column="content" generated="never" lazy="false"
+   name="content" type="string"/>
+  <property column="remark" generated="never" lazy="false" name="remark" type="string"/>
+  <property column="leaveDate" generated="never" lazy="false"
+   name="leaveDate" type="timestamp"/>
+  <property column="state" generated="never" lazy="false" name="state" type="integer"/>
+  <many-to-one class="Employee" column="user_id" name="user"/>
+ </class>
+</hibernate-mapping>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="bpmn">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/WebRoot/bpmn/bpmn.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
